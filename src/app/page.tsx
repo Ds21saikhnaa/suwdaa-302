@@ -171,7 +171,7 @@ const HeroTitle = styled.h2`
 `;
 export default function Home() {
   return (
-    <main style={{ padding: '0 15px' }}>
+    <main>
       <GlobalStyle />
       <Header>
         <Logo>Switzerland</Logo>
@@ -184,7 +184,7 @@ export default function Home() {
       </Header>
 
       <Hero>
-        <HeroTitle>Швейцарь Улсын Гайхамшиг</HeroTitle>
+        <HeroTitle>Switzerland</HeroTitle>
       </Hero>
 
       <Container>
@@ -260,7 +260,7 @@ export default function Home() {
         </Section>
       </Container>
 
-      <Footer>© {new Date().getFullYear()} Switzerland. All rights reserved. Powered by B.Suvdanchimeg</Footer>
+      <Footer>© {new Date().getFullYear()} Switzerland. All rights reserved. <br/>Powered by M1-302 B.Suvdanchimeg</Footer>
     </main>
   );
 }
