@@ -151,9 +151,25 @@ const Hero = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   @media (max-width: 768px) {
     height: 300px;
+  }
+`;
+
+const MainHero = styled.section`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.2rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 40px;
+  border-radius: 5px;
+  @media (max-width: 768px) {
+    font-size: 12px;
+    padding: 15px 30px;
   }
 `;
 
@@ -185,6 +201,8 @@ export default function Home() {
 
       <Hero>
         <HeroTitle>Switzerland</HeroTitle>
+        <br />
+        <MainHero>M1-302 Б. Сувданчимэг</MainHero>
       </Hero>
 
       <Container>
@@ -260,7 +278,10 @@ export default function Home() {
         </Section>
       </Container>
 
-      <Footer>© {new Date().getFullYear()} Switzerland. All rights reserved. <br/>Powered by M1-302 B.Suvdanchimeg</Footer>
+      <Footer>
+        © {new Date().getFullYear()} Switzerland. All rights reserved. <br />
+        Powered by M1-302 B.Suvdanchimeg
+      </Footer>
     </main>
   );
 }

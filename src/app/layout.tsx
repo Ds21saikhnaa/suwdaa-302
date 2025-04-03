@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Provider>
-          <div style={{ padding: '10px 0' }}>{children}</div>
+          <div>{children}</div>
         </Provider>
       </body>
     </html>
