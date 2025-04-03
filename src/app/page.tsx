@@ -13,8 +13,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #fafafa;
-    color: #333;
+    //background-color: #fafafa;
+    //color: #333;
+    background-color: #54313c;
+    color: white;
   }
   
   a {
@@ -28,7 +30,8 @@ const Header = styled.header`
   top: 0;
   left: 0;
   width: 100%;
-  background: #fff;
+  //background: #fff;
+  background: #54313c;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   display: flex;
@@ -44,7 +47,8 @@ const Header = styled.header`
 
 const Logo = styled.h1`
   font-size: 1.8rem;
-  color: #d71a28;
+  //color: #d71a28;
+  color: white;
   margin: 0;
 `;
 
@@ -60,7 +64,8 @@ const Nav = styled.nav`
 
 const NavLink = styled.a`
   font-size: 1rem;
-  color: #555;
+  //color: #555;
+  color: white;
   &:hover {
     color: #d71a28;
   }
@@ -68,12 +73,14 @@ const NavLink = styled.a`
 
 const Footer = styled.footer`
   width: 100%;
-  background: #fff;
+  //background: #fff;
+  background: #54313c;
   padding: 20px;
   text-align: center;
   font-size: 0.9rem;
-  color: #777;
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+  //color: #777;
+  color: white;
+  box-shadow: 0 -4px 10px #290d16;
   margin-top: 40px;
 `;
 
@@ -88,11 +95,12 @@ const Container = styled.main`
 `;
 
 const Section = styled.section`
-  background: #fff;
+  //background: #fff;
+  background: #54313c;
   padding: 40px;
   margin-bottom: 40px;
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px #290d16;
 
   @media (max-width: 768px) {
     padding: 20px;
@@ -102,8 +110,10 @@ const Section = styled.section`
 
 const SectionTitle = styled.h2`
   font-size: 2rem;
-  color: #333;
-  border-bottom: 2px solid #d71a28;
+  //color: #333;
+  color: white;
+  //border-bottom: 2px solid #d71a28;
+  border-bottom: 2px solid white;
   padding-bottom: 10px;
   margin-bottom: 20px;
 
@@ -278,10 +288,7 @@ export default function Home() {
         </Section>
       </Container>
 
-      <Footer>
-        © {new Date().getFullYear()} Switzerland. All rights reserved. <br />
-        Powered by M1-302 B.Suvdanchimeg
-      </Footer>
+      <Footer>© {new Date().getFullYear()} Switzerland. All rights reserved.</Footer>
     </main>
   );
 }
